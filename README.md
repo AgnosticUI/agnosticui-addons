@@ -3,29 +3,15 @@ Repo for complex components, helpers, etc., that don't belong in agnosticui core
 
 ## Motive
 
-A good example of what this addons repo will solve is AgnosticUI's table component. The core repo's table component basically has:
+A good example of what this addons repo will solve is AgnosticUI's table component. See the [table discussion](https://github.com/AgnosticUI/agnosticui-addons/discussions/2).
 
-- Table component with core configuration (zebra striped, hoverable, caption positioning, bordered, etc.)
-- Default and custom sorting functionality
-
-There's also a completely separate pagination component which is current CSS-only.
-
-However, to achieve a table with all the capabilities likely required in an application, we might need to support:
-
-- `isLoading`, `isLoadingComplete` and empty state
-- filtering
-- batch select (checkboxes on leftmost column); delete
-- pagination
-- inline editing
-- row selection
-- table search
-
-Since maintaining all of this complexity in core would greatly increase scope and size to manage, we could choose to put such additions here. Ideally, this would  evolve with the help of community-based contributions.
+Since maintaining all of this complexity in core would greatly increase scope and size to manage, we could choose to put such additions here — ideally, with the help of community-based contributions.
 
 ## Use cases
 
-The following are some ideas of what could be here:
+The following are some ideas of what might go here:
 
+- Advanced tables
 - Date picker, range, etc.
 - Autocomplete typeahead see https://ant.design/components/auto-complete/
 - Data grid with full a11y keyboard navigation
